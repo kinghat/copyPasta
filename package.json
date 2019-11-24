@@ -1,9 +1,10 @@
 {
 	"name": "copypasta",
 	"displayName": "copyPasta",
-	"description": "an extension to align your code for clean pasta later",
+	"description": "a visual studio code extension to align your code for clean pasta later",
 	"version": "0.1.0",
 	"publisher": "kinghat",
+	"repository": "https://github.com/kinghat/copyPasta",
 	"license": "MIT",
 	"icon": "icon.png",
 	"engines": {
