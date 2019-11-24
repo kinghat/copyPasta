@@ -1,0 +1,52 @@
+{
+	"name": "copypasta",
+	"displayName": "copyPasta",
+	"description": "an extension to align your code for clean pasta later",
+	"version": "0.1.0",
+	"publisher": "kinghat",
+	"license": "MIT",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Formatters",
+		"Other"
+	],
+	"keywords": [
+		"copy",
+		"paste",
+		"copyPasta",
+		"pasta",
+		"formatter",
+		"clean",
+		"code",
+		"indentation"
+	],
+	"activationEvents": [
+		"onCommand:extension.copyPasta"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.copyPasta",
+				"title": "copyPasta"
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.12.11",
+		"@types/vscode": "^1.40.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.6",
+		"mocha": "^6.2.2",
+		"typescript": "^3.7.2",
+		"vscode-test": "^1.2.3"
+	}
+}
