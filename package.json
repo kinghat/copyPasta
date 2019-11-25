@@ -2,7 +2,7 @@
 	"name": "copypasta",
 	"displayName": "copyPasta",
 	"description": "a visual studio code extension to align your code for clean pasta later",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "kinghat",
 	"repository": "https://github.com/kinghat/copyPasta",
 	"license": "MIT",

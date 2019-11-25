@@ -4,6 +4,10 @@ All notable changes to the "cleanPasta" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+### 0.1.1
 
-- Initial release
+-  fixed an issue where a blank line led to zero defaultIndentation always
+
+### 0.1.0
+
+-  Initial release
