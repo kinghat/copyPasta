@@ -11,7 +11,7 @@ const vscode = require("vscode");
 function activate(context) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "copyPasta" is now active!');
+	// console.log('Congratulations, your extension "copyPasta" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
@@ -30,14 +30,16 @@ function activate(context) {
 		const selection = editor.document.getText(editor.selection);
 		const textArray = selection.split("\n");
 		const defaultIndentation = Math.min(
-			...textArray.map((string) => string.length - string.trimLeft().length)
+			...textArray
+				.filter((value) => value !== "")
+				.map((string) => string.length - string.trimLeft().length)
 		);
 		const parsedArray = [];
 
 		for (const line of textArray) {
 			parsedArray.push(line.substring(defaultIndentation));
 		}
-
+		
 		const parsedSelection = parsedArray.join("\n");
 
 		vscode.env.clipboard.writeText(parsedSelection);
