@@ -6,7 +6,7 @@
 	"publisher": "kinghat",
 	"repository": "https://github.com/kinghat/copyPasta",
 	"license": "MIT",
-	"icon": "icon.png",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
