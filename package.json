@@ -2,11 +2,11 @@
 	"name": "copypasta",
 	"displayName": "copyPasta",
 	"description": "a visual studio code extension to align your code for clean pasta later",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"publisher": "kinghat",
 	"repository": "https://github.com/kinghat/copyPasta",
 	"license": "MIT",
-	"icon": "icon.png",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -33,6 +33,29 @@
 			{
 				"command": "extension.copyPasta",
 				"title": "copyPasta"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "extension.copyPasta",
+					"when": "editorHasSelection"
+				}
+			],
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"group": "9_cutcopypaste@9",
+					"command": "extension.copyPasta"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "extension.copyPasta",
+				"key": "ctrl+shift+c",
+				"mac": "cmd+shift+c",
+				"when": "editorHasSelection"
 			}
 		]
 	},
