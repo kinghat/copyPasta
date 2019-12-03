@@ -34,6 +34,29 @@
 				"command": "extension.copyPasta",
 				"title": "copyPasta"
 			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "extension.copyPasta",
+					"when": "editorHasSelection"
+				}
+			],
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"group": "9_cutcopypaste@9",
+					"command": "extension.copyPasta"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "extension.copyPasta",
+				"key": "ctrl+shift+c",
+				"mac": "cmd+shift+c",
+				"when": "editorHasSelection"
+			}
 		]
 	},
 	"scripts": {
